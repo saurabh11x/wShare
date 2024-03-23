@@ -20,7 +20,7 @@ app.use('/api/files', require('./routes/files'));
 app.use('/files', require('./routes/show'));
 app.use('/files/download', require('./routes/download'));
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log('Listening on port 3000');
 })
 
